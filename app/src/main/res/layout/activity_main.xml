@@ -5,15 +5,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/greyColor"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:id="@+id/layout">
 
     <TextView
-        android:layout_width="61dp"
-        android:layout_height="23dp"
+        android:id="@+id/textview1"
+        android:layout_width="130dp"
+        android:layout_height="64dp"
         android:fontFamily="sans-serif-black"
-        android:text="ЦВЕТ"
+        android:text="@string/colortext"
         android:textAlignment="center"
-        android:textColor="#FFFFFF"
+        android:textColor="@color/greyColor"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -27,14 +29,16 @@
         android:layout_height="100dp"
         android:backgroundTint="#FF0000"
         android:fontFamily="sans-serif-black"
+        android:text="@string/redbutt"
         android:textColor="#FFFFFF"
         android:textSize="12sp"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.3"
-        tools:text="@string/redbutt" />
+        android:onClick="onRedButtonClick"/>
 
     <Button
         android:id="@+id/button"
@@ -42,13 +46,14 @@
         android:layout_height="100dp"
         android:backgroundTint="#FFE600"
         android:fontFamily="sans-serif-black"
+        android:onClick="onYellowButtonClick"
+        android:text="@string/yellow"
         android:textColor="#FFFFFF"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:text="@string/yellow" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button2"
@@ -56,6 +61,7 @@
         android:layout_height="100dp"
         android:backgroundTint="#4CFF00"
         android:fontFamily="sans-serif-black"
+        android:text="@string/green"
         android:textColor="#FFFFFF"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -63,5 +69,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.7"
-        tools:text="@string/green" />
+        android:onClick="onGreenButtonClick"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

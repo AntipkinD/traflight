@@ -5,16 +5,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/greyColor"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:id="@+id/layout">
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="46dp"
-        android:layout_height="21dp"
+        android:id="@+id/textview1"
+        android:layout_width="100dp"
+        android:layout_height="52dp"
         android:fontFamily="sans-serif-black"
         android:text="ЦВЕТ"
         android:textAlignment="center"
-        android:textColor="#FFFFFF"
+
+        android:textColor="@color/greyColor"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.499"
@@ -27,6 +29,7 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginStart="50dp"
+
         android:backgroundTint="#FF0000"
         android:fontFamily="sans-serif-black"
         android:text="@string/redbutt"
@@ -36,7 +39,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.255"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="onRedButtonClick"/>
 
     <Button
         android:id="@+id/button"
@@ -51,7 +55,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="onYellowButtonClick"/>
 
     <Button
         android:id="@+id/button2"
@@ -67,5 +72,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.75"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="onGreenButtonClick"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

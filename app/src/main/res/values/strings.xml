@@ -3,4 +3,5 @@
     <string name="redbutt">КРАСНЫЙ</string>
     <string name="yellow">ЖЁЛТЫЙ</string>
     <string name="green">ЗЕЛЁНЫЙ</string>
+    <string name="colortext">ЦВЕТ</string>
 </resources>
